@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button b1;
+    Button b1,b2;
     String url="https://github.com/hammad11-0/Assignment3";
 
 
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
      b1=findViewById(R.id.button);
+        b2=findViewById(R.id.button2);
 
     b1.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -27,6 +28,21 @@ public class MainActivity extends AppCompatActivity {
                 openWebPage(url);
         }
     });
+
+       b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+
+
+                Intent intent;
+
+                        intent = new Intent(MainActivity.this, MainActivity2.class);
+                        startActivity(intent);
+
+            }
+        });
+
 
 
     }
