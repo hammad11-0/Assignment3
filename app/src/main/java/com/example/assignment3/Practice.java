@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class Practice extends AppCompatActivity {
 
-    Button b1,b2,b3,b4;
+    Button b1,b2,b3,b4,b5,b6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +18,8 @@ public class Practice extends AppCompatActivity {
         b2.findViewById(R.id.Lahat);
         b3.findViewById(R.id.shaj);
         b4.findViewById(R.id.tarf);
+        b5.findViewById(R.id.nit);
+        b6.findViewById(R.id.lisa);
 
 
 
@@ -57,6 +59,26 @@ public class Practice extends AppCompatActivity {
                 Intent intent;
 
                 intent = new Intent(Practice.this,tarf.class);
+                startActivity(intent);
+            }
+        });
+
+        b5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+
+                intent = new Intent(Practice.this,nit.class);
+                startActivity(intent);
+            }
+        });
+
+        b5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+
+                intent = new Intent(Practice.this,lisa.class);
                 startActivity(intent);
             }
         });

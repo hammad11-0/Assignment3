@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment3">
         <activity
+            android:name=".lisa"
+            android:exported="false" />
+        <activity
+            android:name=".nit"
+            android:exported="false" />
+        <activity
             android:name=".tarf"
             android:exported="false" />
         <activity

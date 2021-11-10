@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/shaj" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/nit"
         android:layout_width="120dp"
         android:layout_height="49dp"
         android:layout_marginTop="32dp"
@@ -58,14 +58,14 @@
         app:layout_constraintTop_toBottomOf="@+id/tarf" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/lisa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="LISAVEYAH"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        app:layout_constraintTop_toBottomOf="@+id/nit" />
 
     <Button
         android:id="@+id/button9"
@@ -75,5 +75,5 @@
         android:text="GHUNNA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/lisa" />
 </androidx.constraintlayout.widget.ConstraintLayout>
