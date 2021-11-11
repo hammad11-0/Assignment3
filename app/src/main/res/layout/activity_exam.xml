@@ -6,4 +6,118 @@
     android:layout_height="match_parent"
     tools:context=".Exam">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Practice">
+
+        <Button
+            android:id="@+id/halq"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="20dp"
+            android:text="HALQIYAH"
+            app:layout_constraintBottom_toTopOf="@+id/shaj"
+            app:layout_constraintEnd_toStartOf="@+id/Lahat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <Button
+            android:id="@+id/Lahat"
+            android:layout_width="94dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="247dp"
+            android:layout_marginEnd="63dp"
+            android:layout_marginBottom="68dp"
+            android:text="LAHATIYAH"
+            app:layout_constraintBottom_toTopOf="@+id/tarf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/halq"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/shaj"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="30dp"
+            android:text="SHAJARIYAH-HAFIA"
+            android:textAlignment="gravity"
+            app:layout_constraintBottom_toTopOf="@+id/gun"
+            app:layout_constraintEnd_toStartOf="@+id/tarf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/halq" />
+
+        <Button
+            android:id="@+id/tarf"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="49dp"
+            android:text="TARFIYAH"
+            app:layout_constraintBottom_toTopOf="@+id/lisa2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/shaj"
+            app:layout_constraintTop_toBottomOf="@+id/Lahat" />
+
+        <Button
+            android:id="@+id/nit"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="77dp"
+            android:text="NIT-EEYAH"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/gun"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toEndOf="@+id/gun"
+            app:layout_constraintTop_toBottomOf="@+id/gun" />
+
+        <Button
+            android:id="@+id/gun"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="18dp"
+            android:text="GHUNNA"
+            app:layout_constraintBottom_toTopOf="@+id/nit"
+            app:layout_constraintEnd_toStartOf="@+id/lisa2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shaj" />
+
+        <Button
+            android:id="@+id/lisa2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="180dp"
+            android:text="LISAVEYAH"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gun"
+            app:layout_constraintTop_toBottomOf="@+id/tarf" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="216dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="107dp"
+            android:layout_marginEnd="32dp"
+            android:text="1"
+            android:textSize="100sp"
+            app:layout_constraintBottom_toTopOf="@+id/Lahat"
+            app:layout_constraintEnd_toEndOf="@+id/Lahat"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
