@@ -215,8 +215,9 @@ public class Exam extends AppCompatActivity {
          Intent intent;
 
          intent = new Intent(Exam.this, end.class);
-         String b=String.valueOf(s);
-         intent.putExtra("score",s );
+
+                    String b=String.valueOf(s);
+                    intent.putExtra("score",b );
          startActivity(intent);
      }
  });
