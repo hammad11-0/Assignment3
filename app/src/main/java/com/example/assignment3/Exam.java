@@ -20,6 +20,7 @@ public class Exam extends AppCompatActivity {
 
     int s=0;
     int mcq=1;
+    boolean b=true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,30 +72,37 @@ public class Exam extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                for (int i = 0; i < 6; i++) {
-                    if (alqiyah[i].equals(n)) {
-                        b1.setBackgroundColor(Color.GREEN);
-                        s++;
+                if(b==true) {
+                    for (int i = 0; i < 6; i++) {
+                        if (alqiyah[i].equals(n)) {
+                            b1.setBackgroundColor(Color.GREEN);
+                            s++;
+                            b=false;
+                            break;
 
-                         break;
-
-                    } else {
-                        b1.setBackgroundColor(Color.RED);
+                        } else {
+                            b1.setBackgroundColor(Color.RED);
+                            b=false;
+                        }
                     }
-                  }
+                }
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                for (int i = 0; i < 2; i++) {
-                    if (lahatiyah[i].equals(n)) {
-                        b2.setBackgroundColor(Color.GREEN);
-                        s++;
-                        break;
-                    } else {
-                        b2.setBackgroundColor(Color.RED);
+                if(b==true) {
+                    for (int i = 0; i < 2; i++) {
+                        if (lahatiyah[i].equals(n)) {
+                            b2.setBackgroundColor(Color.GREEN);
+                            s++;
+                            b=false;
+                            break;
+                        } else {
+                            b2.setBackgroundColor(Color.RED);
+                            b=false;
+                        }
                     }
                 }
             }
@@ -104,13 +112,17 @@ public class Exam extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                for (int i = 0; i < 4; i++) {
-                    if (shajariyah_haafiyah[i].equals(n)) {
-                        b3.setBackgroundColor(Color.GREEN);
-                        s++;
-                        break;
-                    } else {
-                        b3.setBackgroundColor(Color.RED);
+                if (b == true) {
+                    for (int i = 0; i < 4; i++) {
+                        if (shajariyah_haafiyah[i].equals(n)) {
+                            b3.setBackgroundColor(Color.GREEN);
+                            s++;
+                            b=false;
+                            break;
+                        } else {
+                            b3.setBackgroundColor(Color.RED);
+                            b=false;
+                        }
                     }
                 }
             }
@@ -121,13 +133,17 @@ public class Exam extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                for (int i = 0; i < 3; i++) {
-                    if (tarfiyah[i].equals(n)) {
-                        b4.setBackgroundColor(Color.GREEN);
-                        s++;
-                        break;
-                    } else {
-                        b4.setBackgroundColor(Color.RED);
+                if(b==true) {
+                    for (int i = 0; i < 3; i++) {
+                        if (tarfiyah[i].equals(n)) {
+                            b4.setBackgroundColor(Color.GREEN);
+                            s++;
+                            b=false;
+                            break;
+                        } else {
+                            b4.setBackgroundColor(Color.RED);
+                            b=false;
+                        }
                     }
                 }
             }
@@ -138,13 +154,17 @@ public class Exam extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                for (int i = 0; i < 3; i++) {
-                    if (nit_eeyah[i].equals(n)) {
-                        b5.setBackgroundColor(Color.GREEN);
-                        s++;
-                        break;
-                    } else {
-                        b5.setBackgroundColor(Color.RED);
+                if(b==true) {
+                    for (int i = 0; i < 3; i++) {
+                        if (nit_eeyah[i].equals(n)) {
+                            b5.setBackgroundColor(Color.GREEN);
+                            s++;
+                            b=false;
+                            break;
+                        } else {
+                            b5.setBackgroundColor(Color.RED);
+                            b=false;
+                        }
                     }
                 }
             }
@@ -154,13 +174,17 @@ public class Exam extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                for (int i = 0; i < 6; i++) {
-                    if (lisaveyah[i].equals(n)) {
-                        b6.setBackgroundColor(Color.GREEN);
-                      s++;
-                        break;
-                    } else {
-                        b6.setBackgroundColor(Color.RED);
+                if(b==true) {
+                    for (int i = 0; i < 6; i++) {
+                        if (lisaveyah[i].equals(n)) {
+                            b6.setBackgroundColor(Color.GREEN);
+                            s++;
+                            b=false;
+                            break;
+                        } else {
+                            b6.setBackgroundColor(Color.RED);
+                            b=false;
+                        }
                     }
                 }
             }
@@ -169,13 +193,17 @@ public class Exam extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                for (int i = 0; i < 9; i++) {
-                    if (ghunna[i].equals(n)) {
-                        b7.setBackgroundColor(Color.GREEN);
-                       s++;
-                        break;
-                    } else {
-                        b7.setBackgroundColor(Color.RED);
+                if(b==true) {
+                    for (int i = 0; i < 9; i++) {
+                        if (ghunna[i].equals(n)) {
+                            b7.setBackgroundColor(Color.GREEN);
+                            s++;
+                            b=false;
+                            break;
+                        } else {
+                            b7.setBackgroundColor(Color.RED);
+                            b=false;
+                        }
                     }
                 }
             }
@@ -187,17 +215,17 @@ public class Exam extends AppCompatActivity {
             @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View v) {
-                b1.setBackgroundColor (R.color.colordefault);
-                b2.setBackgroundColor(R.color.colordefault);
-                b3.setBackgroundColor(R.color.colordefault);
-                b4.setBackgroundColor(R.color.colordefault);
-                b5.setBackgroundColor(R.color.colordefault);
-                b6.setBackgroundColor(R.color.colordefault);
-                b7.setBackgroundColor(R.color.colordefault);
+                b1.setBackgroundColor (R.color.purple_700);
+                b2.setBackgroundColor(R.color.purple_700);
+                b3.setBackgroundColor(R.color.purple_700);
+                b4.setBackgroundColor(R.color.purple_700);
+                b5.setBackgroundColor(R.color.purple_700);
+                b6.setBackgroundColor(R.color.purple_700);
+                b7.setBackgroundColor(R.color.purple_700);
 
 
-                int b= rand.nextInt(32);
-                n=num[b];
+                int j= rand.nextInt(32);
+                n=num[j];
                 t1.setText(n);
 
                 String t=String.valueOf(s);
@@ -206,6 +234,7 @@ public class Exam extends AppCompatActivity {
                 mcq++;
                 String l=String.valueOf(mcq);
                 t3.setText(l);
+                b=true;
             }
         });
 
