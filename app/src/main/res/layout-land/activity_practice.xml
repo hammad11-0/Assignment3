@@ -10,10 +10,10 @@
         android:id="@+id/halq"
         android:layout_width="117dp"
         android:layout_height="48dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:text="HALQIYAH"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintHorizontal_bias="0.234"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,10 +21,10 @@
         android:id="@+id/Lahat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:text="LAHATIYAH"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/halq" />
 
@@ -32,11 +32,11 @@
         android:id="@+id/shaj"
         android:layout_width="119dp"
         android:layout_height="58dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:text="SHAJARIYAH-HAFIA"
         android:textAlignment="gravity"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Lahat" />
 
@@ -44,20 +44,21 @@
         android:id="@+id/tarf"
         android:layout_width="116dp"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:text="TARFIYAH"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintHorizontal_bias="0.694"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="44dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/nit"
         android:layout_width="120dp"
         android:layout_height="49dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:text="NIT-EEYAH"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gun" />
 
@@ -69,10 +70,10 @@
         android:text="LISAVEYAH"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nit"
-        app:layout_constraintVertical_bias="0.543" />
+        app:layout_constraintVertical_bias="0.186" />
 
     <Button
         android:id="@+id/gun"
@@ -81,7 +82,7 @@
         android:layout_marginTop="28dp"
         android:text="GHUNNA"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintHorizontal_bias="0.693"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tarf" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,82 +8,78 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="737dp"
+        android:layout_width="0dp"
         android:layout_height="455dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.204"
         tools:context=".Practice">
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="155dp"
-            android:layout_height="102dp"
-            android:layout_marginTop="52dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="19dp"
             android:text="1"
             android:textColor="#009688"
             android:textSize="70sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.524"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/button9"
+            app:layout_constraintEnd_toStartOf="@+id/score"
+            app:layout_constraintStart_toEndOf="@+id/textView21"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/Score1"
             android:layout_width="0dp"
             android:layout_height="49dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
             android:text="TextView"
             android:textColor="#FF5722"
             android:textSize="34sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.916"
-            app:layout_constraintStart_toEndOf="@+id/textView21" />
+            app:layout_constraintStart_toEndOf="@+id/score"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
-            android:layout_marginEnd="16dp"
-            android:text="SCORE"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:text="SCORE:"
             android:textColor="#FF9800"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.136"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/Score1"
             app:layout_constraintStart_toEndOf="@+id/textView2"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/mcq"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginBottom="12dp"
+            android:layout_width="96dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
             android:text="MCQ No:"
             android:textColor="#FF9800"
             android:textColorHighlight="#FF9800"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView21"
-            app:layout_constraintStart_toStartOf="@+id/textView21" />
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/score"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
 
         <TextView
             android:id="@+id/textView21"
             android:layout_width="0dp"
-            android:layout_height="41dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="92dp"
-            android:layout_marginEnd="225dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="7dp"
             android:text="TextView"
             android:textColor="#FF5722"
             android:textColorHighlight="#FF5722"
             android:textSize="34sp"
-            app:layout_constraintEnd_toStartOf="@+id/Score1"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -91,89 +87,71 @@
             android:id="@+id/HALQIYAH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="16dp"
             android:text="HALQIYAH"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.464" />
+            app:layout_constraintBaseline_toBaselineOf="@+id/button8"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/button10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="19dp"
             android:text="Tarfiyah"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/HALQIYAH"
-            app:layout_constraintTop_toBottomOf="@+id/HALQIYAH"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintBaseline_toBaselineOf="@+id/button11"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="33dp"
-            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="34dp"
             android:text="lahatiyah"
             app:layout_constraintBottom_toTopOf="@+id/button11"
-            app:layout_constraintEnd_toStartOf="@+id/button12"
-            app:layout_constraintStart_toEndOf="@+id/HALQIYAH" />
+            app:layout_constraintEnd_toStartOf="@+id/textView2" />
 
         <Button
             android:id="@+id/button11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="163dp"
-            android:layout_marginBottom="163dp"
+            android:layout_marginStart="30dp"
             android:text="Nit-eeyah"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button10"
-            app:layout_constraintTop_toTopOf="@+id/Score1"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toTopOf="@+id/button12" />
 
         <Button
             android:id="@+id/button9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
-            android:layout_marginBottom="13dp"
+            android:layout_marginStart="27dp"
             android:text="Shajariyah- Haafiyah"
-            app:layout_constraintBottom_toTopOf="@+id/button13"
-            app:layout_constraintStart_toStartOf="@+id/button12"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/button8" />
 
         <Button
             android:id="@+id/button12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="39dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginEnd="29dp"
             android:text="Lisaveyah"
-            app:layout_constraintStart_toEndOf="@+id/button11"
-            app:layout_constraintTop_toBottomOf="@+id/button9" />
+            app:layout_constraintBaseline_toBaselineOf="@+id/button13"
+            app:layout_constraintEnd_toStartOf="@+id/button13" />
 
         <Button
             android:id="@+id/button13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="17dp"
+            android:layout_marginBottom="23dp"
             android:text="Ghunna"
             app:layout_constraintBottom_toTopOf="@+id/next"
-            app:layout_constraintEnd_toEndOf="@+id/next"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/button12" />
+            app:layout_constraintEnd_toStartOf="@+id/next" />
 
         <Button
             android:id="@+id/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="6dp"
-            android:layout_marginBottom="104dp"
+            android:layout_marginBottom="119dp"
             android:text="Next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/end" />
@@ -182,7 +160,7 @@
             android:id="@+id/end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="36dp"
+            android:layout_marginEnd="16dp"
             android:text="Finish"
             app:layout_constraintBaseline_toBaselineOf="@+id/next"
             app:layout_constraintEnd_toEndOf="parent" />
